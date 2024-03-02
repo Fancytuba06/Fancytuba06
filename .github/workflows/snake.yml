@@ -24,13 +24,14 @@ jobs:
 
     # Checks repo under $GITHUB_WORKSHOP, so your job can access it
       - uses: actions/checkout@v2
-      with:
-      node-version: '20'
+        with:
+          node-version: '20'
 
     # Generates the snake  
-      - uses: Platane/snk@main
+      - uses: Platane/snk@master
         id: snake-gif
         with:
+          node-version: '20'
           github_user_name: Fancytuba06
           # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
           gif_out_path: dist/github-contribution-grid-snake.gif
@@ -41,14 +42,16 @@ jobs:
 
       # Push the changes
       - name: Push changes
-        uses: ad-m/github-push-action@main
+        uses: ad-m/github-push-action@master
         with:
+          node-version: '20'
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
           force: true
 
       - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
+          node-version: '20'
           # the output branch we mentioned above
           target_branch: output
           build_dir: dist
