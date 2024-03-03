@@ -9,4 +9,4 @@
 
 
 
-![Snake animation](https://github.com/Fancytuba06/Fancytuba06/blob/output/github-contribution-grid-snake.svg)
+
