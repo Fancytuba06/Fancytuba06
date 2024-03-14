@@ -6,6 +6,7 @@
 - 😄 Pronouns: yo..lol
 - ⚡ Fun factis i am very funny
 
+![Snake animation]
 
 
 
